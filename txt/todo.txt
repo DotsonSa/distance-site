@@ -1,0 +1,4 @@
+Write up txt
+find imgs
+make logo
+fix html
