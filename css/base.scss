@@ -1,0 +1,154 @@
+@import 'reset';
+@import url('http://www.google.com/fonts/specimen/Lato#charset');
+
+html {
+  height: 100%;
+}
+
+body { 
+  font: 1.5em;
+  font-family: Lato, sans-serif;
+  color: #ecf0f1;
+  background-color: #3453a2;
+  min-height: 100%;
+  width: 67.5%;
+  margin: 0 auto;
+
+  .wrapper {
+    background-color: #4e70c8;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    position: relative;
+    padding: 0 .5em;
+  }
+
+  header {
+    padding: 2.5% 0;
+    margin-bottom: 5%;
+    .header-wrapper {
+      height: 100%;
+      .logo-wrapper {
+        background: url(../images/logo.jpg) no-repeat center center;
+        height: 100px;
+        width: 100px;
+        z-index: 2;
+        h1 {
+          float: right;
+          width: 85%;
+          z-index: 1;
+        }
+      } 
+    }
+  }
+
+// Main Content //
+  .txt {
+    text-align: left; 
+    margin: .25em;
+    text-indent: 3em;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 1.5em;
+    font-family: Georgia, serif;
+    margin: .75em .25em 0 .25em;
+  }
+  
+  br {
+    border: 2px dashed black;
+    margin: 1em;
+  }
+
+  .img-wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #why {
+    width: 100%;
+    img {
+      width: 100%;
+      margin: 0 auto;
+      
+    }
+  }
+
+  #benefits {
+    .img-wrapper {
+      img {
+        overflow: hidden;
+        width: 100%;
+      }
+    }
+    h2, p {
+      margin: .25em;
+    } 
+  }
+  
+  #cool-people {
+    .img-wrapper {
+      img {
+        margin: 0 auto;
+        overflow: hidden;
+        width: 100%;
+      }
+    }
+  }
+
+  footer {
+    margin-bottom: 5%;
+    .logo-wrapper {
+      background: url(../images/logo.jpg) no-repeat center center;
+      height: 100px;
+      width: 100px;
+    }
+    .copyright {
+      font-size: 1.75em;
+      margin: 1em auto;
+    }
+  }
+
+  @media only screen and (max-width: 540px) and (min-width: 320px) {
+  
+    .logo-wrapper {
+      margin: 0 auto;
+    }
+    
+    .title {
+      float: none !important;  
+      width: 100%;
+    }
+
+    .logo-wrapper {
+      .title{
+        margin: 0 auto;
+        width: 100%;
+      }
+    }
+    
+    .copyright {
+      text-align: center;
+      margin: 1em auto;
+    }
+  }
+
+  @media only screen and (min-width: 541px) {
+    .header-wrapper {
+      .logo-wrapper {
+        float: left;
+      }
+    }
+    
+    footer {
+     .copyright {
+       float: right;
+     }
+      .logo-wrapper {
+        display: inline-block;
+        margin: 0 auto;
+      }
+    }
+  }
+} 
